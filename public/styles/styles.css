@@ -1,0 +1,390 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main a {
+  color: #0098d4;
+  text-decoration: none;
+}
+
+main a:link {
+  color: #0098d4;
+}
+
+/* visited link */
+main a:visited {
+  color: #0098d4;
+}
+
+/* mouse over link */
+main a:hover {
+  color: #2280a0;
+}
+
+/* selected link */
+main a:active {
+  color: #0098d4;
+}
+
+/************ BEGIN NAVIGATION **************/
+
+header {
+  background-color: #333;
+}
+
+nav {
+  margin: 0 100px 40px;
+}
+
+.logo {
+  float: left;
+  margin-right: 15px;
+}
+
+.logo img {
+  height: 68px;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-bottom: 0px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li.login {
+  float: right;
+  padding-right: 20px;
+}
+
+nav ul li a {
+  display: block;
+  color: #FFF;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: #111;
+}
+
+nav ul li.login a:hover {
+  background-color: green;
+}
+
+@media screen and (max-width: 1024px) {
+  nav {
+    margin: 0 20px 40px;
+  }  
+}
+
+@media screen and (max-width: 600px) {
+  .logo {
+    float: none;
+    text-align: center;
+    margin-right: 0px;
+  }
+
+  .logo img {
+    height: 60px;
+    margin-left: 0px;
+    margin-bottom: 5px;
+  }
+
+  nav {
+    width: 100%;
+    margin: 0 0 20px;
+  }
+
+  nav ul li, nav ul li.login {
+    float: none;
+    padding-right: 0px;
+  }
+}
+
+/************ END NAVIGATION **************/
+
+/************ BEGIN MAIN **************/
+
+main {
+  margin: 0 200px;
+}
+
+main header {
+  background-color: #FFF;
+  margin: 0 0 20px;
+}
+
+main header p {
+  font-size: 1.2em;
+  margin-top: 4px;
+}
+
+main section {
+  margin: 0 12px 40px;
+}
+
+main section h1 {
+  margin: 0 0 12px;
+}
+
+main:after, section.col-3:after {
+  content: '';
+  display: block;
+  clear: both;
+  height: 0;
+}
+
+section.col-1, article.col-1 {
+  width: 32%;
+  float: left;
+}
+
+section.col-2, article.col-2 {
+  width: 65%;
+  float: left;
+}
+
+section.col-3, article.col-3 {
+  width: 100%;
+  float: left;
+}
+
+section h2 {
+  margin-left: 6px;
+}
+
+.box {
+  background-color: #EEE;
+  border-radius: 5px;
+  min-height: 120px;
+  margin: 6px;
+}
+
+.box img {
+  float: left;
+  height: 118px;
+  border: 1px solid #BBB;
+  margin: 10px;
+}
+
+.box h5 {
+  margin: 10px;
+  font-size: 1.2em;
+}
+
+.box p {
+  margin: 10px;
+}
+
+.box a:link {
+  margin: 10px;
+  display: inline-block;
+}
+
+.box div {
+  text-align: center;
+}
+
+article.col-3.box div {
+  float: left;
+  text-align: left;
+}
+
+article.col-3.box div img {
+  height: 300px;
+}
+
+hr {
+	border-top: 1px solid #EEE;
+  border-bottom: 1px solid #DDD;
+  border-right: none;
+  border-left: none;
+  margin: 12px auto 18px;
+  width: 99%;  
+}
+
+/*** CARDS ***/
+figure {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border: 1px solid #C0C0C0;
+  border-radius: 5px;
+  width: 300px;
+  margin: 10px;
+}
+
+figure img {
+  width: 100%;
+}
+
+figure:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+figcaption {
+  padding: 2px 0;
+}
+
+figure h5 {
+  padding: 8px;
+  font-size: 1.2em;
+}
+
+figcaption p {
+  padding: 10px 16px 2px;
+}
+
+figcaption p:last-child {
+  margin-top: 10px;
+  border-top: 1px solid #CCC;
+  padding-bottom: 10px;
+}
+
+figcaption p span {
+  margin-top: 2px;
+  display: block;
+}
+
+@media screen and (max-width: 1024px) {
+  main {
+    margin: 0 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    margin: 0 10px;
+  }
+
+  section.col-1, article.col-1 {
+    width: 100%;
+    float: left;
+  }
+  
+  section.col-2, article.col-2 {
+    width: 100%;
+    float: left;
+  }
+}
+
+/************ END MAIN **************/
+
+/************ BEGIN FOOTER **************/
+
+footer {
+  background-color: #333;
+  color: #FFF;
+  padding: 20px;
+  text-align: center;
+}
+
+/************ END FOOTER **************/
+
+/******** BEGIN SVG EUROPE MAP ********/
+.st0{fill:none;}
+.st1{fill:#B0E0E6; stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;}
+.st2{fill:#C0C0C0;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;}
+.st3{fill:#666666;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;}
+.st4{fill:#666666;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;}
+.st5{fill:#666666;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;}
+.st6{fill:#666666;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;}
+.st7{fill:#8AE234;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;}
+.st8{fill:#B0E0E6;stroke:#231F20;stroke-linecap:round;stroke-linejoin:round;}
+/******** END SVG EUROPE MAP **********/
+
+/******** BEGIN EM FORMS ********************/
+.em-form {
+  margin-left:auto;
+  margin-right:auto;
+  max-width: 500px;
+  background: #F7F7F7;
+  padding: 25px 15px 25px 10px;
+  font: 12px Georgia, "Times New Roman", Times, serif;
+  color: #888;
+  text-shadow: 1px 1px 1px #FFF;
+  border:1px solid #E4E4E4;
+}
+.em-form h1 {
+  font-size: 25px;
+  padding: 0px 0px 10px 40px;
+  display: block;
+  border-bottom:1px solid #E4E4E4;
+  margin: -10px -15px 30px -10px;;
+  color: #888;
+}
+.em-form h1 > span {
+  display: block;
+  font-size: 11px;
+  margin-top: 5px;
+}
+.em-form label {
+  display: block;
+  margin: 0px;
+}
+.em-form label > span:first-child {
+  float: left;
+  width: 20%;
+  text-align: right;
+  padding-right: 10px;
+  margin-top: 14px;
+  color: #888;
+}
+.em-form label > span:last-child {
+  color: red;
+  font-weight: bold;
+}
+.em-form input[type="text"], .em-form input[type="password"], .em-form input[type="email"], .em-form textarea, .em-form select {
+  border: 1px solid #DADADA;
+  color: #888;
+  height: 30px;
+  margin-bottom: 16px;
+  margin-right: 6px;
+  margin-top: 2px;
+  outline: 0 none;
+  padding: 3px 3px 3px 5px;
+  width: 70%;
+  font-size: 12px;
+  line-height:15px;
+  box-shadow: inset 0px 1px 4px #ECECEC;
+  -moz-box-shadow: inset 0px 1px 4px #ECECEC;
+  -webkit-box-shadow: inset 0px 1px 4px #ECECEC;
+}
+.em-form textarea {
+  padding: 5px 3px 3px 5px;
+  height: 100px;
+}
+.em-form select {
+  background: #FFF;
+  background: #FFF;
+  text-indent: 0.01px;
+  text-overflow: '';
+  width: 70%;
+  height: 35px;
+  line-height: 25px;
+}
+.em-form .button {
+  background: #E27575;
+  border: none;
+  padding: 10px 25px 10px 25px;
+  color: #FFF;
+  box-shadow: 1px 1px 5px #B6B6B6;
+  border-radius: 3px;
+  text-shadow: 1px 1px 1px #9E3F3F;
+  cursor: pointer;
+}
+.em-form .button:hover {
+  background: #CF7A7A
+}
+
+/******** END EM FORMS **********************/

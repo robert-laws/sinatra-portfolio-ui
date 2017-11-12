@@ -1,0 +1,26 @@
+<h1>Hiker Account Info</h1>
+
+<p><%= @hiker.first_name %> <%= @hiker.last_name %></p>
+
+<p>Your contact email: <%= @hiker.email %></p>
+
+<p>You are a member of the <%= @hiker.club.name %>.</p>
+
+<p><a href="/hikers/edit">Edit your profile</a></p>
+
+<hr>
+
+<h3>Here are your completed hikes so far:</h3>
+<p>Click on a hike to view it.</p>
+
+<ul>
+  
+</ul>
+
+<ul>
+  <% @hiker_mountains.each do |hm| %>
+    <li><a href="/hikers/show/<%= hm.id %>"><%= Mountain.find(hm.mountain_id).name %></a></li>
+  <% end %>
+</ul>
+<p>Or add a <a href="/hikers/new">new hike</a>.</p>
+

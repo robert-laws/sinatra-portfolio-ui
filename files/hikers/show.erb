@@ -1,0 +1,16 @@
+<p><%= @hiker.first_name %> <%= @hiker.last_name %></p>
+
+<p>You are a member of the <%= @hiker.club.name %>.</p>
+
+<h4>Hike Details</h4>
+<p>Mountain: <%= Mountain.find(@hm.mountain_id).name %></p>
+<p>Height: <%= Mountain.find(@hm.mountain_id).height %></p>
+<p>Hike Date: <%= @hm.hike_date.strftime("%B %d, %Y") %></p>
+<p>Comments: <%= @hm.comments %></p>
+
+<p><a href="/hikers/edit/<%= @hm.id %>">edit this hike</a></p>
+
+<form method="post" action="/hikers/delete/<%= @hm.id %>" class="em-form">
+  <input id="hidden" type="hidden" name="_method" value="delete">
+  <input type="submit" class="button" value="delete this hike">
+</form>
